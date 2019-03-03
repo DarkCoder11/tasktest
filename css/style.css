@@ -1,0 +1,2549 @@
+* {
+	box-sizing: border-box;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+@font-face {
+    font-family: ArTarumian; /* Имя шрифта */
+    src: url(fonts/ArTarumianHelvetica.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+	text-decoration: none;
+	margin: 0px;
+}
+
+/* .................... 
+		HEADER      
+.......................*/
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+.header	{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #fff;
+	width: 100%;
+	margin: 50px;
+}
+
+.col {
+	width: 900px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.order-button	{
+	display: inline-flex;
+	align-items: baseline;
+}
+
+.order-button p {
+	font-size: 20px;
+}
+
+.button {
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #d99398;
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 25px;
+}
+
+.button:hover {
+	opacity: 0.7;
+}
+
+
+/* .................... 
+		section    
+.......................*/
+
+.section {
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #f8f8f8;
+	border-top: 5px solid #e9e6e9;
+	border-bottom: 5px solid #e9e6e9;
+	width: 100%;
+}
+
+.order-wedding {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transform: scale(1.05);
+	transition: 0.5s;
+	width: 100%;
+}
+
+.order-image {
+	margin-top: -30px;
+}
+
+.order-image, .order-image1, .order-image2 {
+	position: absolute;
+	width: 100%;
+	height: 285px;
+	transform: perspective(2000px)
+    rotateY(0deg); 
+}
+
+.order-image1, .order-image2 {
+	border-top: 3px solid #ccc5c5;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.order-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #494555;
+	width: 100%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+}
+
+.order-text {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 450px;
+}
+
+.order-text h2 {
+	font-size: 38px;
+	margin: 0;
+}
+
+.order-text p {
+	font-style: italic;
+	font-size: 22px;
+	margin: 0;
+}
+
+
+
+/* ....................
+		Services 
+.....................*/
+.services {
+	padding: 50px 0;
+}
+
+.title {
+	text-align: center;
+	color: #494555;
+	font-size: 26px;
+	padding: 20px;
+}
+
+.hearts-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+}
+
+.five-hearts {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.four-hearts {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 725px;
+	width: 100%;
+
+}
+
+.heart {
+	position: relative;
+	width: 165px;
+}
+
+.heart p {
+	font-style: italic;
+	margin: 5px;
+	color: #494555;
+	font-size: 16px;
+}
+
+
+/*  ............................
+		Order-form 
+................................. */
+.section-block {
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #f8f8f8;
+	border-top: 5px solid #e9e6e9;
+	border-bottom: 5px solid #e9e6e9;
+	width: 100%;
+	padding: 50px 0;
+}
+
+.order-title {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	color: #494555;
+	font-size: 32px;
+	margin: 20px 0;
+}
+
+.order-title h2  {
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 36px;
+	margin: 20px 0;
+	padding: 0;
+}
+
+.order-title p {
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 21px;
+	margin: 0;
+	padding: 0;
+}
+
+.form-block .form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form input {
+	width: 485px;
+	height: 40px;
+	border-radius: 5px;
+	margin: 5px;
+	font-style: oblique;
+	padding: 10px;
+}
+
+.order-btn-block:hover{
+	opacity: 0.7;
+}
+
+.order-btn {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #cd6d76;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: normal;
+	width: 485px;
+	height: 50px;
+	border-radius: 5px;
+	margin: 5px;
+	font-style: normal;
+	padding: 15px;
+
+}
+
+.order-btn::after {
+	display: block;
+	width: 30px;
+	height: 30px;
+	content: "";
+	background-image: url(../img/section/btn-mark.png);
+}
+
+.order-btn::before {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	content: "";
+	background-image: url(../img/section/btn-mark.png);
+}
+
+.left-arrow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+.left-arrow p {
+	font-size: 21px;
+	color: #494555;
+	margin: 0;
+	padding: 3px;
+}
+
+
+.left-arrow::before {
+	display: inline-block;
+	content: "";
+	background-image: url(../img/section/arrow-left.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+}
+
+.privacy-policy {
+	text-align: center;
+	text-decoration: underline;
+	padding: 15px; 
+}
+
+/* <!-- ...........................
+		wedding organization 
+.............................--> */
+.icons-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+	margin-bottom: 100px;
+	width: 900px;
+}
+
+.icon-panel {
+	color: #494555;
+	cursor: pointer;
+	width: 150px;
+}
+
+.icon-panel h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	
+}
+
+.icon-panel p {
+	font-size: 16px;
+	font-style: italic;
+
+	
+}
+
+/* .................... 
+		experience   
+.......................*/ 
+
+.experience-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.experience-text h2 {
+	font-size: 33px;
+	margin: 0;
+	
+}
+.experience-text p {
+	font-style: italic;
+	font-size: 18px;
+	margin: 0;
+}
+
+
+/* <!-- ............................
+		scheme of our work
+.................................--> */
+
+.scheme-work {
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.work-steps {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%
+	;
+}
+
+.heart-panel {
+	color: #494555;
+	cursor: pointer;
+	width: 100px;
+}
+
+.heart-panel img {
+	width: 90px;
+}
+
+.heart-panel h1 {
+	background: url(../img/section/heart-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #FFF;
+	margin: 0;
+	font-size: 30px;
+	padding: 35px 0;
+}
+
+.heart-panel h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.heart-panel p {
+	font-size: 16px;
+	font-style: italic;
+	width: 120px;
+}
+
+.arrow-up {
+	padding-top: 30px;
+}
+
+.arrow-down {
+	padding-top: 45px;
+}
+
+
+
+
+/* ...................
+		 Reviews 
+ ....................*/
+
+.reviews {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 100px; 
+	width: 100%;
+}
+
+.wedding-review {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: left;
+	width: 800px;
+}
+
+.review-comment{
+	color: #494555; 	
+}
+
+.review-comment h2 {
+	font-size: 22px;
+}
+
+.review-comment p {
+	width: 550px;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.review-top {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+
+
+
+/* ...................
+		 footer 
+ ....................*/
+.footer {
+ 	background-color: #464252;
+	padding: 50px;
+ }
+
+.frame {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 215px;
+	border: 3px solid #fff;
+}
+
+
+.frame iframe{
+	margin: 0 auto;
+	width: 894px;
+}
+
+.addres-block{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+ .addres-block p {
+	color: #FFF;
+	font-size: 30px;
+ }
+
+.addres {
+	font-size: 20px;
+	font-style: italic;
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+/* .................... 
+		HEADER      
+.......................*/
+ 
+ body {
+ 	display: flex;
+ 	flex-direction: column;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ 	align-items: center;
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto; 
+
+  }
+
+	header {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.header	{
+		width: 100%;
+		max-width: 320px;
+		margin: 0;
+	}
+
+	.col {
+		width: 100%;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	.heading {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.order-button	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 250px;
+	}
+
+	.order-button p {
+		display: block;
+		font-size: 20px;
+	}
+
+	.button {
+		font-size: 18px;
+		border-radius: 5px;
+		padding: 10px 20px;
+		margin: 15px;
+	}
+
+	/* .................... 
+			section    
+	.......................*/
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width:  100%;
+		max-width: 320px;
+
+	}
+
+	.section {
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.order-wedding {
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.order-image {
+		margin-top: -30px;
+	}
+
+	.order-image, .order-image1, .order-image2 {
+		width: 100%;
+		max-width: 285px;
+	}
+
+	.order-image1>img {
+		width: 100%;
+		max-width: 285px;
+	}
+	.order-image2>img {
+		width: 100%;
+		max-width: 285px;
+	}
+
+	.order-block {
+		width: 100%;
+		max-width: 285px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.order-text {
+		width: 100%;
+		max-width: 285px;
+	}
+
+	.order-text h2 {
+		font-size: 30px;
+		margin: 0;
+	}
+
+	.order-text p {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	/* ....................
+			Services 
+	.....................*/
+	.services {
+		padding: 30px 0;
+	}
+
+	.title {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+
+	.five-hearts {
+		width: 100%;
+		max-width: 285px;
+	}
+
+	.four-hearts {
+		width: 100%;
+		max-width: 285px;
+	}
+
+	.heart {
+		width: 100%;
+		max-width: 165px;
+	}
+
+	.heart p {
+		margin: 5px;
+		color: #494555;
+		font-size: 16px;
+	}
+
+
+	/*  ............................
+			Order-form 
+	................................. */
+	.section-block {
+		width: 100%;
+		max-width: 320px;
+		padding: 30px 0;
+	}
+
+	.order-title {
+		font-size: 25px;
+		margin: 10px 0;
+		width: 100%;
+		max-width: 285px;
+	}
+
+	.order-title h2  {
+		font-size: 25px;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.order-title p {
+
+		font-size: 21px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.form-block .form {
+		width: 100%;
+		max-width: 250px;
+	}
+
+	.form input {
+		max-width: 250px;
+		width: 100%;
+		height: 30px;
+		border-radius: 3px;
+		margin: 5px;
+		padding: 10px;
+	}
+
+	.order-btn {
+		max-width: 250px;
+		width: 100%;
+		height: 30px;
+		border-radius: 5px;
+		margin: 5px;
+		padding: 10px;
+
+	}
+
+	.left-arrow {
+		padding: 10px;
+		width: 100%;
+	}
+
+	.left-arrow p {
+		font-size: 21px;
+		margin: 0;
+		padding: 3px;
+	}
+
+
+	.left-arrow::before {
+		width: 50px;
+		height: 50px;
+	}
+
+	.privacy-policy {
+		padding: 10px; 
+	}
+
+	/* <!-- ...........................
+			wedding organization 
+	.............................--> */
+	
+	.org-wedding {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.icons-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.icon-panel {
+		width: 150px;
+	}
+
+	.icon-panel h3 {
+		font-size: 15px;
+	}
+
+	.icon-panel p {
+		font-size: 10px;
+	}
+
+	/* .................... 
+			experience  
+	.......................*/ 
+
+
+	.experience-text h2 {
+		font-size: 25px;
+		margin: 0;
+		
+	}
+	.experience-text p {
+		font-size: 18px;
+		margin: 0;
+	}
+
+
+	/* <!-- ............................
+			scheme of our work
+	.................................--> */
+	
+	.scheme-work {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 320px;
+	}
+
+
+
+	.scheme-work {
+		padding: 20px;
+	}
+
+	.container {
+		width: 100%;
+		max-width: 285px;
+	}
+
+	.work-steps {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.heart-panel {
+		width: 100px;
+		max-width: 285px;
+	}
+
+	.heart-panel img {
+		width: 90px;
+	}
+
+	.heart-panel h3 {
+		font-size: 15px;
+	}
+
+	.heart-panel p {
+		font-size: 13px;
+	}
+
+	.arrow-up {
+		padding-top: 20px;
+	}
+
+	.arrow-down {
+		padding-top: 25px;
+	}
+
+
+
+
+	/* ...................
+			 Reviews 
+	 ....................*/
+
+	.reviews {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-bottom: 50px; 
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.wedding-review {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		max-width: 320px;
+		width: 100%;
+	}
+
+	.review-comment h2 {
+		font-size: 22px;
+		text-align: center;
+	}
+
+	.review-comment p {
+		text-align: center;
+		max-width: 250px;
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.review-top > img {
+		width: 100%;
+		max-width: 285px;
+
+	}
+	.review-bottom > img {
+		width: 100%;
+		max-width: 285px;
+
+	}
+
+	/* ...................
+			 footer 
+	 ....................*/
+	.footer {
+		padding: 30px;
+	 }
+
+	.frame {
+		border: 3px solid #fff;
+		width: 100%;
+		max-width: 285px;
+	}
+
+
+	.frame iframe{
+		margin: 0 auto;
+		width: 274px;
+	}
+
+	.addres-block{
+		width: 100%;
+	}
+
+	 .addres-block p {
+		color: #FFF;
+		font-size: 30px;
+	 }
+
+	.addres {
+		font-size: 20px;
+		font-style: italic;
+	}	
+}
+
+
+/* @media screen and (max-width: 480px) {
+.................... 
+		HEADER      
+.......................
+ 
+ body {
+    max-width: 480px;
+  }
+
+	header {
+		width: 450px;
+	}
+
+	.header	{
+		width: 450px;
+	}
+
+	.col {
+		width: 450px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.heading {
+		width: 100%;
+	}
+
+	.order-button	{
+		width: 100%;
+	}
+
+	.order-button p {
+		font-size: 20px;
+	}
+
+	.button {
+		font-size: 18px;
+		border-radius: 5px;
+		padding: 10px 20px;
+		margin: 15px;
+	}
+
+	.................... 
+			section    
+	.......................
+	.section {
+		width: 480px;
+	}
+
+	.order-wedding {
+		width: 100%;
+		height: 285px;
+	}
+
+	.order-image {
+		margin-top: -30px;
+	}
+
+	.order-image, .order-image1, .order-image2 {
+		width: 450px;
+		height: 285px;
+	}
+
+	.order-block {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+	}
+
+	.order-text {
+		width: 100%;
+	}
+
+	.order-text h2 {
+		font-size: 30px;
+		margin: 0;
+	}
+
+	.order-text p {
+		font-style: italic;
+		font-size: 15px;
+		margin: 0;
+	}
+
+	....................
+			Services 
+	.....................
+	.services {
+		padding: 30px 0;
+	}
+
+	.title {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+
+	.five-hearts {
+		width: 100%;
+	}
+
+	.four-hearts {
+		width: 100%;
+	}
+
+	.heart {
+		width: 165px;
+	}
+
+	.heart p {
+		margin: 5px;
+		font-size: 16px;
+	}
+
+	............................
+			Order-form 
+	.................................
+	.section-block {
+		width: 100%;
+		padding: 30px 0;
+	}
+
+	.order-title {
+		font-size: 25px;
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	.order-title h2  {
+		font-size: 25px;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.order-title p {
+
+		font-size: 21px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.form-block .form {
+		width: 100%;
+	}
+
+	.form input {
+		width: 400px;
+		height: 30px;
+		border-radius: 3px;
+		margin: 5px;
+		padding: 10px;
+	}
+
+	.order-btn {
+		width: 400px;
+		height: 30px;
+		border-radius: 5px;
+		margin: 5px;
+		padding: 10px;
+
+	}
+
+	.left-arrow {
+		padding: 10px;
+		width: 100%;
+	}
+
+	.left-arrow p {
+		font-size: 21px;
+		margin: 0;
+		padding: 3px;
+	}
+
+
+	.left-arrow::before {
+		width: 50px;
+		height: 50px;
+	}
+
+	.privacy-policy {
+		padding: 10px; 
+	}
+
+	<!-- ...........................
+			wedding organization 
+	.............................-->
+	.icons-block {
+		margin-bottom: 50px;
+		width: 450px;
+	}
+
+	.icon-panel {
+		width: 150px;
+	}
+
+	.icon-panel h3 {
+		font-size: 15px;
+	}
+
+	.icon-panel p {
+		font-size: 10px;
+	}
+
+	.................... 
+			experience  
+	....................... 
+
+
+	.experience-text h2 {
+		font-size: 25px;
+		margin: 0;
+	}
+	.experience-text p {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	<!-- ............................
+			scheme of our work
+	.................................-->
+
+	.scheme-work {
+		padding: 20px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.work-steps {
+		width: 450px;
+	}
+
+	.heart-panel {
+		width: 100px;
+	}
+
+	.heart-panel img {
+		width: 90px;
+	}
+
+	.heart-panel h3 {
+		font-size: 15px;
+	}
+
+	.heart-panel p {
+		font-size: 13px;
+	}
+
+	.arrow-up {
+		padding-top: 20px;
+	}
+
+	.arrow-down {
+		padding-top: 25px;
+	}
+
+	...................
+			 Reviews 
+	 ....................
+
+	.reviews {
+		padding-bottom: 50px; 
+		width: 100%;
+	}
+
+	.wedding-review {
+		width: 450px;
+	}
+
+	.review-comment h2 {
+		font-size: 22px;
+	}
+
+	.review-comment p {
+		width: 300px;
+		font-size: 16px;
+	}
+
+	.review-top {
+		width: 100%;
+
+	}
+
+	...................
+			 footer 
+	 ....................
+	.footer {
+		padding: 30px;
+	 }
+
+	.frame {
+		height: 215px;
+		border: 3px solid #fff;
+		width: 100%;
+	}
+
+
+	.frame iframe{
+		margin: 0 auto;
+		width: 400px;
+	}
+
+	.addres-block{
+		width: 100%;
+	}
+
+	 .addres-block p {
+		color: #FFF;
+		font-size: 30px;
+	 }
+
+	.addres {
+		font-size: 20px;
+	}	
+}
+
+
+@media screen and (max-width: 680px) {
+	body {
+    max-width: 680px;
+	}
+	header {
+		width: 650px;
+	}
+
+	.header	{
+		width: 650px;
+	}
+
+	.col {
+		width: 650px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.heading {
+		width: 100%;
+	}
+
+	.order-button	{
+		width: 100%;
+	}
+
+	.order-button p {
+		font-size: 20px;
+	}
+
+	.button {
+		font-size: 18px;
+		border-radius: 5px;
+		padding: 10px 20px;
+		margin: 15px;
+	}
+
+	.................... 
+			section    
+	.......................
+	.section {
+		width: 680px;
+	}
+
+	.order-wedding {
+		width: 100%;
+		height: 285px;
+	}
+
+	.order-image {
+		margin-top: -30px;
+	}
+
+	.order-image, .order-image1, .order-image2 {
+		width: 650px;
+		height: 285px;
+	}
+	.order-block {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+	}
+
+	.order-text {
+		width: 100%;
+	}
+
+	.order-text h2 {
+		font-size: 30px;
+		margin: 0;
+	}
+
+	.order-text p {
+		font-size: 15px;
+		margin: 0;
+	}
+
+
+
+	....................
+			Services 
+	.....................
+	.services {
+		padding: 30px 0;
+	}
+
+	.title {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+
+	.five-hearts {
+		width: 100%;
+	}
+
+	.four-hearts {
+		width: 100%;
+	}
+
+	.heart {
+		width: 165px;
+	}
+
+	.heart p {
+		margin: 5px;
+		font-size: 16px;
+	}
+
+
+	............................
+			Order-form 
+	.................................
+	.section-block {
+		width: 100%;
+		padding: 30px 0;
+	}
+
+	.order-title {
+		font-size: 25px;
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	.order-title h2  {
+		font-size: 25px;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.order-title p {
+		font-size: 21px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.form-block .form {
+		width: 100%;
+	}
+
+	.form input {
+		width: 600px;
+		height: 30px;
+		border-radius: 3px;
+		margin: 5px;
+		padding: 10px;
+	}
+
+	.order-btn {
+		width: 600px;
+		height: 30px;
+		border-radius: 5px;
+		margin: 5px;
+		padding: 10px;
+
+	}
+
+	.left-arrow {
+		padding: 10px;
+		width: 100%;
+	}
+
+	.left-arrow p {
+		font-size: 21px;
+		margin: 0;
+		padding: 3px;
+	}
+
+
+	.left-arrow::before {
+		width: 50px;
+		height: 50px;
+	}
+
+	.privacy-policy {
+		padding: 10px; 
+	}
+
+	<!-- ...........................
+			wedding organization 
+	.............................-->
+	.icons-block {
+		margin-bottom: 50px;
+		width: 650px;
+	}
+
+	.icon-panel {
+		width: 150px;
+	}
+
+	.icon-panel h3 {
+		font-size: 15px;
+	}
+
+	.icon-panel p {
+		font-size: 10px;
+	}
+
+	.................... 
+			experience  
+	....................... 
+
+
+	.experience-text h2 {
+		font-size: 25px;
+		margin: 0;
+	}
+	.experience-text p {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	<!-- ............................
+			scheme of our work
+	.................................-->
+
+	.scheme-work {
+		padding: 20px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.work-steps {
+		width: 650px;
+	}
+
+	.heart-panel {
+		width: 100px;
+	}
+
+	.heart-panel img {
+		width: 90px;
+	}
+
+	.heart-panel h3 {
+		font-size: 15px;
+	}
+
+	.heart-panel p {
+		font-size: 13px;
+	}
+
+	.arrow-up {
+		padding-top: 20px;
+	}
+
+	.arrow-down {
+		padding-top: 25px;
+	}
+
+	...................
+			 Reviews 
+	 ....................
+
+	.reviews {
+		padding-bottom: 50px; 
+		width: 100%;
+	}
+
+	.wedding-review {
+		width: 650px;
+	}
+
+	.review-comment h2 {
+		font-size: 22px;
+	}
+
+	.review-comment p {
+		width: 350px;
+		font-size: 16px;
+	}
+
+	.review-top {
+		width: 100%;
+
+	}
+
+	...................
+			 footer 
+	 ....................
+	.footer {
+		padding: 30px;
+	 }
+
+	.frame {
+		height: 315px;
+		border: 3px solid #fff;
+		width: 100%;
+	}
+
+
+	.frame iframe{
+		margin: 0 auto;
+		width: 600px;
+	}
+
+	.addres-block{
+		width: 100%;
+	}
+
+	 .addres-block p {
+		color: #FFF;
+		font-size: 30px;
+	 }
+
+	.addres {
+		font-size: 20px;
+	}	
+}
+----------------
+
+@media screen and (max-width: 768px) {
+	body {
+    max-width: 768px;
+ 	}
+
+	header {
+		width: 750px;
+	}
+
+	.header	{
+		width: 750px;
+	}
+
+	.col {
+		width: 750px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.heading {
+		width: 100%;
+	}
+
+	.order-button	{
+		width: 100%;
+	}
+
+	.order-button p {
+		font-size: 20px;
+	}
+
+	.button {
+		font-size: 18px;
+		border-radius: 5px;
+		padding: 10px 20px;
+		margin: 15px;
+	}
+
+	.................... 
+			section    
+	.......................
+	.section {
+		width: 768px;
+	}
+
+	.order-wedding {
+		width: 100%;
+		height: 285px;
+	}
+
+	.order-image {
+		margin-top: -30px;
+	}
+
+	.order-image, .order-image1, .order-image2 {
+		width: 700px;
+		height: 285px;
+	}
+	.order-block {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+	}
+
+	.order-text {
+		width: 100%;
+	}
+
+	.order-text h2 {
+		font-size: 30px;
+		margin: 0;
+	}
+
+	.order-text p {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	....................
+			Services 
+	.....................
+	.services {
+		padding: 30px 0;
+	}
+
+	.title {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+
+	.five-hearts {
+		width: 100%;
+	}
+
+	.four-hearts {
+		width: 100%;
+	}
+
+	.heart {
+		width: 165px;
+	}
+
+	.heart p {
+		margin: 5px;
+		font-size: 16px;
+	}
+
+	............................
+			Order-form 
+	.................................
+	.section-block {
+		width: 100%;
+		padding: 30px 0;
+	}
+
+	.order-title {
+		font-size: 25px;
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	.order-title h2  {
+		font-size: 25px;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.order-title p {
+		font-size: 21px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.form-block .form {
+		width: 100%;
+	}
+
+	.form input {
+		width: 600px;
+		height: 30px;
+		border-radius: 3px;
+		margin: 5px;
+		padding: 10px;
+	}
+
+	.order-btn {
+		width: 600px;
+		height: 30px;
+		border-radius: 5px;
+		margin: 5px;
+		padding: 10px;
+
+	}
+
+	.left-arrow {
+		padding: 10px;
+		width: 100%;
+	}
+
+	.left-arrow p {
+		font-size: 21px;
+		color: #494555;
+		margin: 0;
+		padding: 3px;
+	}
+
+
+	.left-arrow::before {
+		width: 50px;
+		height: 50px;
+	}
+
+	.privacy-policy {
+		padding: 10px; 
+	}
+
+	<!-- ...........................
+			wedding organization 
+	.............................-->
+	.icons-block {
+		margin-bottom: 50px;
+		width: 750px;
+	}
+
+	.icon-panel {
+		width: 150px;
+	}
+
+	.icon-panel h3 {
+		font-size: 15px;
+	}
+
+	.icon-panel p {
+		font-size: 10px;
+	}
+
+	.................... 
+			experience  
+	....................... 
+
+
+	.experience-text h2 {
+		font-size: 25px;
+		margin: 0;
+	}
+	.experience-text p {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	<!-- ............................
+			scheme of our work
+	.................................-->
+
+	.scheme-work {
+		padding: 20px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.work-steps {
+		width: 750px;
+	}
+
+	.heart-panel {
+		width: 100px;
+	}
+
+	.heart-panel img {
+		width: 90px;
+	}
+
+	.heart-panel h3 {
+		font-size: 15px;
+	}
+
+	.heart-panel p {
+		font-size: 13px;
+	}
+
+	.arrow-up {
+		padding-top: 20px;
+	}
+
+	.arrow-down {
+		padding-top: 25px;
+	}
+
+	...................
+			 Reviews 
+	 ....................
+
+	.reviews {
+		padding-bottom: 50px; 
+		width: 100%;
+	}
+
+	.wedding-review {
+		width: 750px;
+	}
+
+	.review-comment h2 {
+		font-size: 22px;
+	}
+
+	.review-comment p {
+		width: 350px;
+		font-size: 16px;
+	}
+
+	.review-top {
+		width: 100%;
+
+	}
+
+	...................
+			 footer 
+	 ....................
+	.footer {
+		padding: 30px;
+	 }
+
+	.frame {
+		height: 215px;
+		border: 3px solid #fff;
+		width: 100%;
+	}
+
+
+	.frame iframe{
+		margin: 0 auto;
+		width: 700px;
+	}
+
+	.addres-block{
+		width: 100%;
+	}
+
+	 .addres-block p {
+		color: #FFF;
+		font-size: 30px;
+	 }
+
+	.addres {
+		font-size: 20px;
+
+	}	
+}
+ */
+
+/* @media screen and (max-width: 1050px) {
+ body {
+    max-width: 320px;
+  }
+
+header {
+	width: 320px;
+}
+
+.header	{
+	width: 320px;
+}
+
+.col {
+	width: 320px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.heading {
+	width: 100%;
+}
+
+.order-button	{
+	width: 100%;
+}
+
+.order-button p {
+	font-size: 20px;
+}
+
+.button {
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 15px;
+}
+
+.................... 
+		section    
+.......................
+.order-block {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.order-text {
+	width: 100%;
+}
+
+.order-text h2 {
+	font-size: 30px;
+	margin: 0;
+}
+
+.order-text p {
+	font-style: italic;
+	font-size: 15px;
+	margin: 0;
+}
+
+
+
+....................
+		Services 
+.....................
+.services {
+	padding: 30px 0;
+}
+
+.title {
+	font-size: 20px;
+	padding: 10px;
+}
+
+
+.five-hearts {
+	width: 100%;
+}
+
+.four-hearts {
+	width: 100%;
+}
+
+.heart {
+	width: 165px;
+}
+
+.heart p {
+	margin: 5px;
+	font-size: 16px;
+}
+
+
+............................
+		Order-form 
+.................................
+.section-block {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.order-title {
+	font-size: 25px;
+	margin: 10px 0;
+	width: 100%;
+}
+
+.order-title h2  {
+	font-size: 25px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.order-title p {
+
+	font-size: 21px;
+	margin: 0;
+	padding: 0;
+}
+
+.form-block .form {
+	width: 100%;
+}
+
+.form input {
+	width: 250px;
+	height: 30px;
+	border-radius: 3px;
+	margin: 5px;
+	padding: 10px;
+}
+
+.order-btn {
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px;
+
+}
+
+.left-arrow {
+	padding: 10px;
+	width: 100%;
+}
+
+.left-arrow p {
+	font-size: 21px;
+	color: #494555;
+	margin: 0;
+	padding: 3px;
+}
+
+
+.left-arrow::before {
+	width: 50px;
+	height: 50px;
+}
+
+.privacy-policy {
+	padding: 10px; 
+}
+
+<!-- ...........................
+		wedding organization 
+.............................-->
+.icons-block {
+	margin-bottom: 50px;
+	width: 320px;
+}
+
+.icon-panel {
+	width: 150px;
+}
+
+.icon-panel h3 {
+	font-size: 15px;
+}
+
+.icon-panel p {
+	font-size: 10px;
+}
+
+.................... 
+		experience  
+....................... 
+
+
+.experience-text h2 {
+	font-size: 25px;
+	margin: 0;
+}
+.experience-text p {
+	font-size: 18px;
+	margin: 0;
+}
+
+<!-- ............................
+		scheme of our work
+.................................-->
+
+.scheme-work {
+	padding: 20px;
+}
+
+.container {
+	width: 100%;
+}
+
+.work-steps {
+	width: 320px;
+}
+
+.heart-panel {
+	width: 100px;
+}
+
+.heart-panel img {
+	width: 90px;
+}
+
+.heart-panel h3 {
+	font-size: 15px;
+}
+
+.heart-panel p {
+	font-size: 13px;
+}
+
+.arrow-up {
+	padding-top: 20px;
+}
+
+.arrow-down {
+	padding-top: 25px;
+}
+
+...................
+		 Reviews 
+ ....................
+
+.reviews {
+	padding-bottom: 50px; 
+	width: 100%;
+}
+
+.wedding-review {
+	width: 320px;
+}
+
+.review-comment h2 {
+	font-size: 22px;
+}
+
+.review-comment p {
+	width: 250px;
+	font-size: 16px;
+}
+
+.review-top {
+	width: 100%;
+
+}
+
+...................
+		 footer 
+ ....................
+.footer {
+	padding: 30px;
+ }
+
+.frame {
+	height: 215px;
+	border: 3px solid #fff;
+	width: 100%;
+}
+
+
+.frame iframe{
+	margin: 0 auto;
+	width: 274px;
+}
+
+.addres-block{
+	width: 100%;
+}
+
+ .addres-block p {
+	color: #FFF;
+	font-size: 30px;
+ }
+
+.addres {
+	font-size: 20px;
+	font-style: italic;
+}	
+}
+}
+
+@media screen and (max-width: 2250px) {
+ body {
+    max-width: 320px;
+  }
+
+header {
+	width: 320px;
+}
+
+.header	{
+	width: 320px;
+}
+
+.col {
+	width: 320px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.heading {
+	width: 100%;
+}
+
+.order-button	{
+	width: 100%;
+}
+
+.order-button p {
+	font-size: 20px;
+}
+
+.button {
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 15px;
+}
+
+.................... 
+		section    
+.......................
+.order-block {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.order-text {
+	width: 100%;
+}
+
+.order-text h2 {
+	font-size: 30px;
+	margin: 0;
+}
+
+.order-text p {
+	font-style: italic;
+	font-size: 15px;
+	margin: 0;
+}
+
+
+
+....................
+		Services 
+.....................
+.services {
+	padding: 30px 0;
+}
+
+.title {
+	font-size: 20px;
+	padding: 10px;
+}
+
+
+.five-hearts {
+	width: 100%;
+}
+
+.four-hearts {
+	width: 100%;
+}
+
+.heart {
+	width: 165px;
+}
+
+.heart p {
+	margin: 5px;
+	font-size: 16px;
+}
+
+
+............................
+		Order-form 
+.................................
+.section-block {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.order-title {
+	font-size: 25px;
+	margin: 10px 0;
+	width: 100%;
+}
+
+.order-title h2  {
+	font-size: 25px;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.order-title p {
+
+	font-size: 21px;
+	margin: 0;
+	padding: 0;
+}
+
+.form-block .form {
+	width: 100%;
+}
+
+.form input {
+	width: 250px;
+	height: 30px;
+	border-radius: 3px;
+	margin: 5px;
+	padding: 10px;
+}
+
+.order-btn {
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px;
+
+}
+
+.left-arrow {
+	padding: 10px;
+	width: 100%;
+}
+
+.left-arrow p {
+	font-size: 21px;
+	color: #494555;
+	margin: 0;
+	padding: 3px;
+}
+
+
+.left-arrow::before {
+	width: 50px;
+	height: 50px;
+}
+
+.privacy-policy {
+	padding: 10px; 
+}
+
+<!-- ...........................
+		wedding organization 
+.............................-->
+.icons-block {
+	margin-bottom: 50px;
+	width: 320px;
+}
+
+.icon-panel {
+	width: 150px;
+}
+
+.icon-panel h3 {
+	font-size: 15px;
+}
+
+.icon-panel p {
+	font-size: 10px;
+}
+
+.................... 
+		experience  
+....................... 
+
+
+.experience-text h2 {
+	font-size: 25px;
+	margin: 0;
+}
+.experience-text p {
+	font-size: 18px;
+	margin: 0;
+}
+
+<!-- ............................
+		scheme of our work
+.................................-->
+
+.scheme-work {
+	padding: 20px;
+}
+
+.container {
+	width: 100%;
+}
+
+.work-steps {
+	width: 320px;
+}
+
+.heart-panel {
+	width: 100px;
+}
+
+.heart-panel img {
+	width: 90px;
+}
+
+.heart-panel h3 {
+	font-size: 15px;
+}
+
+.heart-panel p {
+	font-size: 13px;
+}
+
+.arrow-up {
+	padding-top: 20px;
+}
+
+.arrow-down {
+	padding-top: 25px;
+}
+
+...................
+		 Reviews 
+ ....................
+
+.reviews {
+	padding-bottom: 50px; 
+	width: 100%;
+}
+
+.wedding-review {
+	width: 320px;
+}
+
+.review-comment h2 {
+	font-size: 22px;
+}
+
+.review-comment p {
+	width: 250px;
+	font-size: 16px;
+}
+
+.review-top {
+	width: 100%;
+
+}
+
+...................
+		 footer 
+ ....................
+.footer {
+	padding: 30px;
+ }
+
+.frame {
+	height: 215px;
+	border: 3px solid #fff;
+	width: 100%;
+}
+
+
+.frame iframe{
+	margin: 0 auto;
+	width: 274px;
+}
+
+.addres-block{
+	width: 100%;
+}
+
+ .addres-block p {
+	color: #FFF;
+	font-size: 30px;
+ }
+
+.addres {
+	font-size: 20px;
+	font-style: italic;
+}	
+}
+}
+ */
